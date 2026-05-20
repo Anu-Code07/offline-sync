@@ -1,20 +1,28 @@
-name: orbitsync_workspace
-description: OrbitSync monorepo workspace for Flutter offline-first synchronization packages.
-publish_to: none
+name: orbitsync
+description: Offline-first synchronization toolkit for Flutter apps with storage adapters, realtime transport, CRDT utilities, widgets, and devtools.
+version: 0.1.0
+homepage: https://github.com/Anu-Code07/offline-sync
+repository: https://github.com/Anu-Code07/offline-sync
+issue_tracker: https://github.com/Anu-Code07/offline-sync/issues
+documentation: https://github.com/Anu-Code07/offline-sync/tree/main/docs
+authors:
+  - Anurag
 environment:
   sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.22.0"
 
-workspace:
-  - packages/sync_core
-  - packages/sync_storage
-  - packages/sync_realtime
-  - packages/sync_crdt
-  - packages/sync_flutter
-  - packages/sync_devtools
-  - examples/todo_app
-  - examples/chat_app
-  - examples/collaborative_notes_app
-  - examples/expense_tracker
+topics:
+  - offline
+  - sync
+  - local-first
+  - realtime
+  - flutter
+
+dependencies:
+  flutter:
+    sdk: flutter
 
 dev_dependencies:
-  melos: any
+  flutter_test:
+    sdk: flutter
+  test: any

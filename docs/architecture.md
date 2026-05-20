@@ -1,17 +1,17 @@
 # OrbitSync Architecture
 
-OrbitSync is split into small packages with inward-facing dependencies. Core
-sync logic has no Flutter or database dependency, which keeps it portable across
-mobile, desktop, server-side Dart, and tests.
+OrbitSync is published as one Flutter package with focused library entrypoints.
+Core sync logic still has no Flutter or database dependency, which keeps it
+portable across mobile, desktop, server-side Dart, and tests.
 
 ```mermaid
 flowchart TD
-  App[Flutter App] --> Flutter[sync_flutter]
-  Flutter --> Core[sync_core]
-  DevTools[sync_devtools] --> Core
-  Storage[sync_storage] --> Core
-  Realtime[sync_realtime] --> Core
-  CRDT[sync_crdt] -. optional merge helpers .-> Core
+  App[Flutter App] --> Flutter[sync_flutter.dart]
+  Flutter --> Core[sync_core.dart]
+  DevTools[sync_devtools.dart] --> Core
+  Storage[sync_storage.dart] --> Core
+  Realtime[sync_realtime.dart] --> Core
+  CRDT[sync_crdt.dart] -. optional merge helpers .-> Core
   Core --> Transport[HTTP/WebSocket Transport]
   Core --> Adapter[StorageAdapter]
   Adapter --> SQLite

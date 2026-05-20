@@ -4,7 +4,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-import 'package:sync_core/sync_core.dart';
+import 'sync_core.dart';
 
 class SyncEngineController extends ChangeNotifier {
   SyncEngineController(this.engine);

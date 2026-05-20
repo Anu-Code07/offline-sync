@@ -1,5 +1,4 @@
-import 'package:sync_core/sync_core.dart';
-import 'package:sync_storage/sync_storage.dart';
+import 'package:orbitsync/orbitsync.dart';
 
 Future<void> main() async {
   final storage = InMemoryStorageAdapter();

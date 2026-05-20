@@ -4,7 +4,7 @@
 
 - Verify connectivity monitor reports `canReachInternet=true`.
 - Check retry `nextAttemptAt`; mutations may be backing off.
-- Inspect dead letters in `sync_devtools`.
+- Inspect dead letters with `SyncDevToolsPanel` from `sync_devtools.dart`.
 
 ## Conflicts keep repeating
 

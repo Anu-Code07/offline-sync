@@ -1,7 +1,7 @@
 name: orbitsync
 
 packages:
-  - packages/**
+  - .
   - examples/**
 
 command:
@@ -10,14 +10,14 @@ command:
 
 scripts:
   analyze:
-    run: melos exec -- "dart analyze ."
-    description: Analyze all Dart packages.
+    run: melos exec -- "flutter analyze ."
+    description: Analyze the OrbitSync package and examples.
   format:
-    run: dart format --set-exit-if-changed packages examples
+    run: dart format --set-exit-if-changed lib test examples benchmarks
     description: Check Dart formatting.
   test:
-    run: melos exec --dir-exists=test -- "dart test"
-    description: Run package unit tests.
+    run: flutter test
+    description: Run OrbitSync unit tests.
   server:test:
     run: npm test --prefix server_mock
     description: Run mock server tests.

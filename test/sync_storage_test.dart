@@ -1,5 +1,5 @@
-import 'package:sync_core/sync_core.dart';
-import 'package:sync_storage/sync_storage.dart';
+import 'package:orbitsync/sync_core.dart';
+import 'package:orbitsync/sync_storage.dart';
 import 'package:test/test.dart';
 
 void main() {

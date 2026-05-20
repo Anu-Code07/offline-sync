@@ -4,7 +4,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:sync_core/sync_core.dart';
+import 'sync_core.dart';
 
 abstract interface class RealtimeSocket {
   Stream<Object?> get stream;

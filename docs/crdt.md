@@ -1,7 +1,7 @@
 # CRDT Concepts
 
-OrbitSync includes small CRDT primitives in `sync_crdt` for data types that need
-automatic, convergent merges.
+OrbitSync includes small CRDT primitives in the `sync_crdt.dart` entrypoint for
+data types that need automatic, convergent merges.
 
 - `VectorClock` detects causal ordering and concurrent updates.
 - `LamportClock` provides monotonic event ordering for mutation metadata.

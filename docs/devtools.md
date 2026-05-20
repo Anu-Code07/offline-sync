@@ -1,6 +1,6 @@
 # DevTools
 
-`sync_devtools` provides a Flutter panel for inspecting:
+The `sync_devtools.dart` entrypoint provides a Flutter panel for inspecting:
 
 - current sync state
 - pending mutation queue

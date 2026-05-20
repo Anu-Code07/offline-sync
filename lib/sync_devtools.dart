@@ -3,7 +3,7 @@ library sync_devtools;
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:sync_core/sync_core.dart';
+import 'sync_core.dart';
 
 class SyncDevToolsPanel extends StatefulWidget {
   const SyncDevToolsPanel({

@@ -1,4 +1,4 @@
-import 'package:sync_crdt/sync_crdt.dart';
+import 'package:orbitsync/sync_crdt.dart';
 import 'package:test/test.dart';
 
 void main() {
