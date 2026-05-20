@@ -2,7 +2,9 @@ name: orbitsync_todo_app
 description: Todo sample demonstrating offline optimistic updates with OrbitSync.
 publish_to: none
 environment:
-  sdk: ">=3.4.0 <4.0.0"
+  sdk: ">=3.5.0 <4.0.0"
+
+resolution: workspace
 
 dependencies:
   flutter:

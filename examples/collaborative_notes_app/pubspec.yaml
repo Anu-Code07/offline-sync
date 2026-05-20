@@ -2,7 +2,9 @@ name: orbitsync_collaborative_notes_app
 description: Collaborative notes sample demonstrating conflict-friendly local-first editing.
 publish_to: none
 environment:
-  sdk: ">=3.4.0 <4.0.0"
+  sdk: ">=3.5.0 <4.0.0"
+
+resolution: workspace
 
 dependencies:
   flutter:
