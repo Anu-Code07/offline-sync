@@ -1,0 +1,16 @@
+name: orbitsync_workspace
+description: OrbitSync monorepo workspace for Flutter offline-first synchronization packages.
+publish_to: none
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+workspace:
+  - packages/sync_core
+  - packages/sync_storage
+  - packages/sync_realtime
+  - packages/sync_crdt
+  - packages/sync_flutter
+  - packages/sync_devtools
+
+dev_dependencies:
+  melos: any

@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  dart:
+    name: Dart and Flutter packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Install Melos
+        run: dart pub global activate melos
+      - name: Bootstrap workspace
+        run: melos bootstrap
+      - name: Check formatting
+        run: dart format --set-exit-if-changed packages examples
+      - name: Analyze
+        run: melos analyze
+      - name: Test
+        run: melos test
+
+  server:
+    name: Mock server
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server_mock
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: server_mock/package-lock.json
+      - run: npm ci
+      - run: npm test

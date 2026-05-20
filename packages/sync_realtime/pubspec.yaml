@@ -1,0 +1,14 @@
+name: sync_realtime
+description: Realtime websocket coordination for OrbitSync with reconnects, heartbeats, subscriptions, and presence.
+version: 0.1.0
+repository: https://github.com/example/orbitsync
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  sync_core:
+    path: ../sync_core
+
+dev_dependencies:
+  test: any
