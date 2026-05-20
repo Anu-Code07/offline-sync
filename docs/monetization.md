@@ -21,6 +21,6 @@ OrbitSync is designed for an open-core business model.
 - usage billing and quotas
 - edge sync nodes
 
-The package boundaries keep paid modules additive: enterprise features can supply
-new `SyncTransport`, `StorageAdapter`, `ConflictResolver`, or
+The public extension points keep paid modules additive: enterprise features can
+supply new `SyncTransport`, `StorageAdapter`, `ConflictResolver`, or
 `BackgroundSyncScheduler` implementations without forking the SDK.

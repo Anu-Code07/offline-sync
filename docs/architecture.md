@@ -4,6 +4,15 @@ OrbitSync is published as one Flutter package with focused library entrypoints.
 Core sync logic still has no Flutter or database dependency, which keeps it
 portable across mobile, desktop, server-side Dart, and tests.
 
+Most apps import the umbrella API:
+
+```dart
+import 'package:orbitsync/orbitsync.dart';
+```
+
+The internal entrypoints shown below keep concerns separated while still shipping
+from the same package.
+
 ```mermaid
 flowchart TD
   App[Flutter App] --> Flutter[sync_flutter.dart]
