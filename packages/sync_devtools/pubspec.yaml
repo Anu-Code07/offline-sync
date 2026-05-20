@@ -1,0 +1,20 @@
+name: sync_devtools
+description: Developer tools widgets for inspecting OrbitSync queues, retries, conflicts, websocket state, and sync timelines.
+version: 0.1.0
+repository: https://github.com/example/orbitsync
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sync_core:
+    path: ../sync_core
+  sync_flutter:
+    path: ../sync_flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

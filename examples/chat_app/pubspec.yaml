@@ -1,0 +1,15 @@
+name: orbitsync_chat_app
+description: Chat sample demonstrating realtime invalidation and optimistic messages.
+publish_to: none
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sync_core:
+    path: ../../packages/sync_core
+  sync_flutter:
+    path: ../../packages/sync_flutter
+  sync_storage:
+    path: ../../packages/sync_storage
