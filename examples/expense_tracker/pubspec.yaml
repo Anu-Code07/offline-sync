@@ -2,7 +2,9 @@ name: orbitsync_expense_tracker
 description: Expense tracker sample demonstrating offline queues and retry-friendly writes.
 publish_to: none
 environment:
-  sdk: ">=3.4.0 <4.0.0"
+  sdk: ">=3.5.0 <4.0.0"
+
+resolution: workspace
 
 dependencies:
   flutter:
